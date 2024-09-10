@@ -1,0 +1,83 @@
+*   {
+    font-family: sans-serif;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    height: 1000px;
+}
+
+h1 {
+    background-color: rgb(0,0,0);
+    border-radius: 10px;
+    padding:10px 20px;
+    color: white;
+    position: sticky;
+    top: 10px;
+    z-index: 200;
+    text-align: center;
+    width: fit-content;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.color-by-name{
+    background-color: coral;
+    color: rebeccapurple;
+    border: thin solid greenyellow;
+}
+
+.colors-by-hexadecimal{
+    background-color: #00d0ff50;
+    color: #A44;
+    border: thin solid #0099AA;
+}
+
+.colors-rgb{
+    background-color: rgb(0,0,0);
+    color: rgb(255,255,255);
+    
+}
+.colors-rgb-2{
+    background-color: rgb(0,0,0,0.5);
+    color: rgb(255,255,255);
+    
+}
+.img-cromatic{
+    display: block;
+    width: 35%
+    
+}
+
+.center{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.color-hsl{
+    background-color: hsla(200,100%,30%,0.5);
+}
+
+.color-transparent-current{
+    background-color: darkmagenta;
+    background-color: transparent;
+    background-color: currentColor;
+}
+
+.Opacity{
+    background-color:orchid ;
+    color:black;
+    opacity: .5;
+}

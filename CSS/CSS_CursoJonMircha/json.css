@@ -1,0 +1,13 @@
+html{
+    background-color: hsl(0, 0%, 19%);
+}
+
+.header{
+    width: 100%;
+    height: calc(2rem + 2vh);
+    background-color: hsl(0, 0%, 29%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+

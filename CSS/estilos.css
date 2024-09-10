@@ -1,0 +1,460 @@
+
+/*COMENTARIO EN CSS*/
+
+@import url(otraHoja.css); /* MALA PRACTICA PORQUE SON BLOQUEANTES
+A LA HORA DE QUE EL NAVEGADOR LEE ESTA INSTRUCCIÓN (ES MEJOR HACERLO 
+EN UN SOLO CSS SI ES UN CSS NORMALITO)*/
+html{
+    box-sizing: border-box;
+    color: white;
+    scroll-behavior:smooth
+}
+
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    color: inherit;
+}
+
+
+ul{
+    list-style-type: none;
+}
+
+.items{
+    background-image: linear-gradient(90deg, rgba(95,94,117,1) 27%, rgba(190,190,190,1) 72%);
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+html{
+    background-color: hsl(0, 3%, 13%);
+    color: white;
+}
+
+
+[id="inicio-css"]{
+    scroll-margin-top: 110px;
+}
+
+.header{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2000;
+}
+
+.header *{ 
+    margin: 0 1rem;
+    display: inline-block;
+    font-size: calc(.25rem + 1vw);
+}
+
+.up-down,.up-down span{
+    margin: 0;
+}
+
+.header span {
+font-size: calc(.5rem + 2vw);
+
+}
+
+
+.links{
+    text-decoration: none;
+    color: white;
+
+}
+
+
+
+
+.header{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 100%;
+    height: calc(4rem + 2vh);;
+    position: sticky;
+    top:0;
+    background-color: hsl(0, 2%, 22%);
+}
+
+.icons:hover{
+    color: hsl(218, 82%, 41%);
+}
+
+
+h1 {
+    color: rgb(217, 207, 207);
+    background-color: rgb(158, 143, 143);
+    width: 50%;
+    margin: 2rem auto
+}
+
+h2 {
+    color: rgb(199, 39, 68)	;
+}
+
+#flecha{
+    width: 15px;
+    height: 15px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: rgb(39, 187, 175);
+
+}
+
+#parrafo-prueba {
+    background-color: skyblue;
+}
+
+.text-32 {
+    font-size: 32px;
+}
+
+.text-20 {
+    font-size: 20px;
+}
+
+.bg-steelblue {
+    background-color:steelblue;
+}
+
+.bg-skyblue {
+    background-color: skyblue;
+}
+
+.text-white {
+    color: white;
+}
+
+.hijos-directos > li{
+    background-color: springgreen;
+
+}
+
+.hijos-decendientes b{
+    background-color: springgreen;
+
+}
+
+.imagen-pequeña {
+    scale: 70%;
+}
+
+
+/* Los selectores de hermanos van a aplicar a los elementos que son hermanos y que estan
+que estén por debajo del elemento de referencia */
+.hermanos-general ~ li{
+    background-color: magenta;
+
+}
+
+/* Los selectores de hermanos adyacentes van a aplicar al elemento que es hermano y, a su vez, 
+adyacente a este mismo, o sea al que después del usado como referencia */ 
+
+.hermanos-adyacentes + li{
+    background-color: magenta;
+
+}
+
+.selectores-atributos a[href]{
+    
+    font-weight: bold;
+}
+
+.selectores-atributos a[target ="_blank"]{
+    color: darkblue;   
+}
+
+/* El "*=" funciona como un comodin el cual es capaz de diferenciar si en un string
+hay cierta palabra, como se ve en el ejemplo de abajo, se toma de "a" (una etiqueta de enlace
+en html) el "href" (atributo que apunta a un link en especifico) y se distingue si hay una palabra
+en especifico */
+
+.selectores-atributos a[href *="minimalista"]{
+    font-size: 24px;
+}
+
+.selectores-atributos a[href *="inicio"]{
+    background-color: black;
+    color: white;
+}
+
+/* Comodin "^=" funciona en la misma manera que el "*=", la diferencia puntual radica en que se busca
+un texto al inicio*/
+
+.selectores-atributos a[href ^="index"]{
+    text-decoration: none;
+}
+
+/* Comodin "$=" funciona en la misma manera que el "^=", la diferencia puntual radica en que se busca
+un texto al final*/
+
+
+.selectores-atributos a[href $=".com"]{
+    background-color:darkgray
+}
+
+
+/* Comodin "~=" funciona buscando un texto que esta separado entre espacios*/
+
+
+.selectores-atributos a[class ~= "cursos"]{
+    background-color: darkcyan;
+}
+
+
+/* Comodin "|=" funciona buscando un texto que esta separado entre espacios y que despues del texto
+en cuestion venga un guión medio*/
+
+
+.selectores-atributos a[class |= "menu"]{
+    font-style: oblique;
+}
+
+
+/* Selector Universal */
+* {
+    font-family: sans-serif;
+}
+
+.selector-universal * {
+    font-size: 24px;
+}
+
+/* Dan estilos dependiendo del contexto, posicion o estado del elemento */
+
+.form-pseudoclases *:required{
+    border-color: yellow;
+
+}
+
+.form-pseudoclases *:valid {
+    border-color: green;
+}
+
+.form-pseudoclases *:invalid { 
+    border-color: red;
+}
+
+.form-pseudoclases *:focus {
+    background-color: skyblue;
+}
+
+.form-pseudoclases *:disabled{
+
+    color: pink;
+
+}
+
+.menu-pseudoclases a:visited{
+    color:  olive;
+}
+
+.menu-pseudoclases a:hover{
+    color: orange;
+}
+
+#indice:target{
+    background-color: aqua;
+}
+
+.button-style:hover {
+    background-color: green;
+    }
+    
+
+.button-style:active {
+background-color: darkgreen;
+}
+
+.p-pseudoclases:hover {
+    font-size: 24px;
+}
+
+
+.hechiceros-pseudoclases li:first-child {
+color: green;
+}
+
+.hechiceros-pseudoclases li:last-child {
+color: blueviolet;
+}
+
+.hechiceros-pseudoclases li:nth-child(1){
+    background-color: blanchedalmond;
+}
+
+
+.hechiceros-pseudoclases li:nth-child(4n){
+    font-size: 20px;
+}
+
+.hechiceros-pseudoclases li:nth-child(even){
+    font-weight: bold;
+}
+
+.hechiceros-pseudoclases li:nth-child(odd){
+    font-style: italic;
+}
+
+.articulo-pseudoclases p:first-of-type{
+    background-color: pink;
+}
+
+.articulo-pseudoclases p:last-of-type{
+    background-color: magenta;
+}
+
+
+.articulo-pseudoclases p:nth-of-type(2){
+    background-color: lightblue;
+}
+
+.articulo-pseudoclases *:not(p){
+    background-color: beige;
+}
+
+/* Pseudo elementos */
+
+.precio-nvidia::before{
+    content: "$";
+    font-weight: bold;
+
+}
+
+
+.precio-nvidia::after{
+    content: " USD";
+    font-weight: bold;
+
+}
+
+
+.nvidia::after{
+    content: "🟩";
+
+}
+
+.p-pseudoelementos::first-letter{
+    font-weight: bold;
+    font-size: 32px;
+
+}
+
+.p-pseudoelementos::first-line{
+    color: coral;
+
+}
+
+
+.p-pseudoelementos::selection{
+    color: greenyellow;
+    background-color: black;
+
+}
+
+/* Agrupar selectores */
+
+.form-agrupar-selectores input[type="text"],[type="email"], .form-agrupar-selectores textarea{
+    border-color:darkblue;
+    background-color: black;
+    font-size: 20px;
+    display: block;
+    width: 300px;
+    border-width: 2px;
+    border-style: dashed;
+}
+
+/* APRENDIENDO SOBRE LA CASCADA Y LA ESPECIFIDAD */
+
+blockquote#cita-marco.cita-marco {
+    background-color:rgb(163, 74, 121);
+}
+
+blockquote#cita-marco {
+    background-color: blueviolet;
+}
+
+
+blockquote.cita-marco {
+    background-color: burlywood;
+}
+
+.cita-marco{
+    background-color: cornflowerblue;
+
+}
+
+.cita-marco {
+    background-color: crimson !important;
+}
+
+.fraseVieja {
+    background-color: darkorange ;
+    font-size: 32px;
+    border-style: dotted;
+    border-color: red ;
+}
+
+.fraseVieja cite{
+    background-color: inherit; 
+    font-size: initial;
+}
+
+
+.box{
+    width: 80%;
+    height: 100vh;
+    background-color: hsl(218, 82%, 41%) ;
+    margin: 0 auto;
+}
+
+.item{
+    color: white;
+    width: 100%;
+    height: 1fr;
+    padding: 1rem;
+    border: medium solid white;
+    background-color: hsl(0, 0%, 53%);
+}
+
+.item p{
+    color: white;
+}
+
+.grid-try{
+    display: grid;
+
+    /* 3 x 3 */
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+
+    /* 2 x 5 */
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+
+
+}
+
+.item:nth-child(9){
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+.item:nth-child(9) p{
+    color: red;
+}

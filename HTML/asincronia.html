@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asincronia</title>
+    <link rel="stylesheet" href="../CSS/sanitize.css">
+    <link rel="stylesheet" href="../CSS/CSS_CursoJonMircha/asincronia.css">
+
+</head>
+<body>
+
+    <a href="curso_js.html">devolverme</a>
+
+    <h1>Asincronia HTML</h1>
+
+    
+
+
+
+    <ul class="lista-conceptos">
+        <li>            
+            Procesamiento Single Thread y Multi Thread
+        </li>
+            <div class="parrafos">
+                <p>
+                    JavaScript tiene funciones que nos va a permitir lanzar acciones despues de cierto tiempo o una n cantidad de veces 
+                </p>
+
+                <p>
+                    JavaScript es un lenguaje Single Thread. No nos tenemos que preocupar por los problemas de concurrencia, recolector de basura, etc, eso lo hace el lenguaje de programación. No se puede hacer operaciones largas, como el acceso a la red, porque se bloquea el hilo principal. 
+                </p>
+            
+
+                <p>
+                    La sincronia permite hacer largas solicitudes de red sin bloquear el hilo principal. JS trabaja con un modelo asincrono y no bloqueante y tiene un loop de eventos de un solo hilo para operaciones de entrada y salida.
+                </p>
+            
+                <p>
+                    Los hilos son las unidades basicas de ejecucion de cada proceso que realiza nuestra maquina. En nuestra computadora se levanta un proceso, internamente esos procesos pueden correr varios hilos o un solo hilo. Dependiendo del lenguaje, seran single thread o multi thread 
+                </p>
+            </div>
+        
+        <li>
+            Operaciones de CPU y Operaciones I / O 
+        </li>
+
+            <div class="parrafos">
+                <p>
+                    En un procesamiento, en el codigo de una aplicacion podemos tener operaciones de este tipo. Las operaciones que se consideran de CPU son aquellas que se consideran que van a pasar mayor tiempo consumiendo operaciones de CPU, por ejemplo: Un loop infinito consumira más y más memoria y, de esta manera, consumira más rendimiento de la maquina. 
+                </p>
+
+                <p>
+                    Las Operaciones de Input / Output seran aquellas que estaran esperando la mayor parte del tiempo la peticion del recurso que han solicitado. 
+                </p>
+            </div>
+
+        <li>
+            Operaciones concurrentes y paralelas
+        </li>
+
+            <div class="parrafos">
+                <p>
+                    La concurrencia es cuando dos o más tareas progresan simultaneamente, se ejecutan al mismo tiempo y van avanzando simultaneamente, el paralelismo es cuando dos o más tareas trabajan al mismo tiempo. La clave esta en la palabra progreso.
+                </p>
+            </div>
+        <li> 
+            Operacion bloqueante y no bloqueante
+        </li>
+            <div class="parrafos">
+                <p>
+                    Se refiere a la fase de espera cada que se ejecuta una operacion en nuestro codigo, se refiere a como toma esa fase de espera. Una bloqueante no devuelve el control a la aplicacion hasta que termina de realizar toda la tarea. Una no bloqueante se ejecuta y devuelve el control así no termine la tarea que este realizando.
+                </p>
+            </div>
+        <li> Operaciones sincronas y asincronas</li>
+
+            <div class="parrafos">
+                <p>
+                    Se refiere a cuando obtendra respuesta. Sincrono significa que la respuesta sucede en el presente, o sea, en el tiempo inmediato. Asincrona significa que la respuesta sucede en el futuro, se ejecuta pero no va a saber cuando va a venir la respuesta, no espera el resultado. 
+                </p>
+            </div>
+    </ul>
+
+
+        <h2>Codigo Sincrono Bloqueante</h2>
+            <p>
+                cada operacion se hace de una vez bloqueando el flujo del hilo principal mientras se espera la respuesta hasta que se procese y luego pasa a la siguiente operación. 
+            </p>
+            
+
+
+        <h2>Codigo Asincrono no bloquenate</h2>
+            <p>
+
+            </p>
+
+
+    <script src="../JS/JS_CursoJonMircha/symbols.js"></script>
+</body>
+</html>

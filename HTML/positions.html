@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento en CSS</title>
+    <link rel="stylesheet" href="../CSS/sanitize.css">
+    <link rel="stylesheet" href="../CSS/positions.css">
+</head>
+
+    
+
+<body>
+    <h1>Posicionamiento en css</h1>
+    <div style="height: 50px;"></div>
+    <nav class="pos-sticky"> 
+        <h2 id="inicio">Volver al index html</h2>
+        <p>Para regresar presiona este link: <a href="index.html">volver</a></p>
+        <h2>Indice</h2>
+        <ol>
+        <li><a href="positions.html#pos-static">Posicionamiento estatico</a></li>
+        <li><a href="positions.html#pos-relative">Posicionamiento relativo</a></li>
+        </ol>
+    </nav>
+    
+        
+
+ 
+
+    <hr>
+    <article class="pos-static">
+        <h2>Posicionamiento estatico</h2>
+        <p>
+            Es el valor por defecto, significa que el elemento respeta el flujo del doc HTML, 
+            por lo que no se puede mover ni posicionar.
+        </p>
+
+        <div class="static">Caja estatica</div>
+
+    </article>
+    
+    <hr>
+    <article id="pos-relative">
+        <h2>Posicionamiento Relativo</h2>
+        <p>
+            El elemento conserva sus dimensiones y posición original en el flujo del documento. 
+            Si se mueve toma como referencia su posición original.
+        </p>
+        <div class="relative">
+            Caja relativa
+        </div>
+        <a href="positions.html#inicio" ><img src="../IMG/icons8-flecha-arriba-50.png" alt="icons8-flecha-arriba-50" class="volver-arriba"></a>
+    </article>    
+    
+    <hr class="dist-hr">
+    <article id="pos-absolute">
+        <h2>Posicionamiento absoluto</h2>
+        <p>
+            El elemento pierde sus dimensiones y posición original en el flujo del documento. Si se mueve
+            Si se mueve puede tomar como referencia 2 elementos:
+        </p>
+        <ol>
+            <li>El primer ancestro con posicionamiento relativo</li>
+            <li>Si no encuentra un ancestro relativo , se mueve respecto del doc HTML</li>
+        </ol>
+        <div class="absolute">
+            Caja absoluta
+        </div>
+
+        <section class="relative-parent">
+            <div class="absolute-child">
+                caja absoluta con ancestro relativo
+            </div>
+        </section>
+        <a href="positions.html#inicio" ><img src="../IMG/icons8-flecha-arriba-50.png" alt="icons8-flecha-arriba-50" class="volver-arriba"></a>
+    </article>
+
+    <hr>
+    <article id="pos-absolute">
+        <h2>Posicionamiento fijo (fixed)</h2>
+        <p>
+            El elemento pierde sus dimensiones y posición original en el flujo del documento.
+            Si se mueve toma como referencia el documento HTML y queda fijo en la posición,
+            cuando el scroll se mueva, el elemento no lo hará, queda fijo.
+        </p>
+
+        <div class="fixed">
+            CAJA DE INICIO CON FIXED
+        </div>
+
+        <a href="positions.html#inicio" ><img src="../IMG/icons8-flecha-arriba-50.png" alt="icons8-flecha-arriba-50" class="volver-arriba"></a>
+    </article>
+    <hr>
+    <article id="pos-sticky">
+        <h2>Posicionamiento pegajoso (sticky)</h2>
+        <p>
+            Es una combinación de posicionamiento relative y fixed, para este posicionamiento las propiedades
+            de top, left, bottom y right no mueven el elemento, sirven como un punto de referencia, mientras 
+            no lleguen a ese valor el elemento se comporta como relative, cuando llega se convierte en fixed.
+        </p>
+        <p>
+            Para que su comportamiento funcione, el elemento sticky debe ser hijo directo del body o su elemento 
+            contenedor debe tener dimensiones definidas y sólo será sticky dentro de las dimensiones de su 
+            contenedor padre.
+        </p> 
+
+        
+
+
+        <a href="positions.html#inicio" ><img src="../IMG/icons8-flecha-arriba-50.png" alt="icons8-flecha-arriba-50" class="volver-arriba"></a>
+    </article>    
+    
+    <hr>
+    <article id="pos-sticky">
+        <h2>Propiedad z-index</h2>
+        <p>
+            Permite controlar la profundidad de los elementos posicionados,
+            su valor por defecto es auto, acepta números positivos, negativos
+            y cero.
+        </p>
+
+        <p>
+            A mayor valor le elemento esta más al frente, a menor valor más al fondo
+        </p>
+
+        <p>
+            Un elemento padre nunca podrá estar sobre sus elementos hijos, sin embargo
+            los elementos hijos si pueden dandoles un valor negativo
+        </p>
+        
+
+        <div class="z-index-1">Caja 1</div>
+        <div class="z-index-2">Caja 2</div>
+
+
+        <a href="positions.html#inicio" ><img src="../IMG/icons8-flecha-arriba-50.png" alt="icons8-flecha-arriba-50" class="volver-arriba"></a>
+    </article>
+
+
+ 
+    
+</body>
+</html>

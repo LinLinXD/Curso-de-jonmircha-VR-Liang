@@ -1,0 +1,61 @@
+html {
+    box-sizing: border-box;
+    font-family: "Roboto";
+    font-size: 16px;
+    scroll-behavior: smooth;
+    
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+    color: inherit;
+}
+
+body{
+    margin: 0;
+}
+
+.slide span {
+    display: inline-block;
+    font-size: 4rem;
+}
+
+.slides{
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory ; /* [x | y | inline | block | both] [mandatory | proximity] none es el default*/
+    scroll-snap-type: y mandatory;
+}
+
+.slide{
+    width: 100%;
+    height: inherit;
+    background-color:hsl(247, 43%, 16%);
+    scroll-snap-align: center; /* None es el default | end | start | center */
+    scroll-snap-align: start;
+}
+
+.slide:nth-child(even){
+    background-color:hsl(197, 60%, 18%);
+   
+}
+
+.slide-container{
+    width: 80%;
+    height: inherit;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+    color: hsl(173, 94%, 88%);
+}
+
+.slide-container h1{ 
+    text-align: center;
+
+}

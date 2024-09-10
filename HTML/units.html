@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidades de medida</title>
+    <link rel="stylesheet" href="../CSS/sanitize.css">
+    <link rel="stylesheet" href="../CSS/units.css">
+</head>
+<body>
+    <nav class="indice">
+        
+        <div class="links">
+            <h2>Indice</h2>
+            <ul>
+                <li><a href="index.html" class="links-style">regresar</a></li>
+                <li><a href="units.html#definicion" class="links-style">Definición</a></li>
+                <li><a href="units.html#px" class="links-style">Pixeles</a></li>
+                <li><a href="units.html#ems" class="links-style">Ems</a></li>
+                <li><a href="units.html#rems" class="links-style">Rems</a></li>
+                <li><a href="units.html#exs" class="links-style">Exs</a></li>
+                <li><a href="units.html#chs" class="links-style">Chs</a></li>
+                <li><a href="units.html#porcentajes" class="links-style">Porcentajes</a></li>
+                <li><a href="units.html#units-viewport" class="links-style">Unidades del viewport</a></li>
+            </ul>
+        
+        
+        </div>
+        
+    </nav>
+
+    <h1>Unidades de medida en CSS</h1>
+    <article id="definicion">
+    <h2>Definicion</h2>
+
+    <p>
+        1) Absolutas (Su valor no cambia, son unidades del mundo real): 
+        <ul>
+            <li>pc, cm, mm, in, Q</li>
+            <li>pt (1/72in)</li>
+            <li>px (1/96in)</li>
+        </ul>
+    </p>
+
+    <p>
+        2) Relativas (Su valor es relativo a un contexto):
+            <ul>            
+                <li>em, rem, ex, chal tamaño de la fuente</li>
+                <li>em- basada en la anchura de la "m" de la fuente del elemento</li>
+                <li>rem basada en la anchura de la "m" de la fuente del elemento raíz (html)</li>
+                <li>ex - basada en la altura de la "x" de la fuente del elemento</li>
+                <li>ch- basada en la anchura del "0" de la fuente del elemento</li>
+                <li>%- al tamaño del contenedor</li>
+                <li>vw, vh, vmin, vmax - al tamaño del viewport</li>
+                <li>vw - ancho del viewport van de 1 a 100</li>
+                <li>vh - alto del viewport van de 1 a 100</li>
+                <li>vmax - entre vw y vh toma el que tenga mayor valor</li>
+                <li>vmax - entre vw y vh toma el que tenga menor valor</li>
+            </ul>
+    </p>
+
+    <p>
+        Conversiones entre unidades - <a href="https://products.aspose.app/html/es/pixel-calculator/px-to-em" target="_blank">px to em</a>
+    </p>
+
+    </article>
+
+    <article id="px">
+        <hr>
+        <h2>Pixeles</h2>
+        <div class="pixels">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis harum porro et quis accusantium voluptatibus aperiam? Vel voluptatibus molestiae asperiores laborum ad minima nam nihil a, unde hic. Aliquid, eaque!
+        </div>
+        <p>
+            No es recomendable usar pixeles, es mejor usar unidades RELATIVAS. Esto se debe al responsive desing.
+        </p>
+
+
+    </article>
+
+    
+    <Article id="ems">
+        <hr>
+        <h2>Ems</h2>
+        <p>Basada en la anchura de la "m" de la fuente del elemento</p>
+        <div class="Ems">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis harum porro et quis accusantium voluptatibus aperiam? Vel voluptatibus molestiae asperiores laborum ad minima nam nihil a, unde hic. Aliquid, eaque!
+            <div class="em-child">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam repellendus similique eligendi omnis cum! Amet libero, est asperiores unde magni repudiandae eligendi, repellat perferendis labore iusto dolore quam, necessitatibus deserunt?
+            </div>
+        </div>
+    </Article>
+
+
+    <Article id="rems">
+        <hr>
+        <h2>Rems</h2>
+        <p>Basada en la anchura de la "m" de la fuente del elemento raiz (html)</p>
+        <div class="Rems">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis harum porro et quis accusantium voluptatibus aperiam? Vel voluptatibus molestiae asperiores laborum ad minima nam nihil a, unde hic. Aliquid, eaque!
+
+            <section class="Rem-child">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam neque fugit quo tempore pariatur asperiores cum et sit dignissimos iste. Ipsum doloremque nam nostrum fugit eveniet unde maxime voluptas non!
+            </section>
+
+        </div>
+    </Article>
+
+    <Article id="exs">
+        <hr>
+        <h2>EXs</h2>
+        <p>Basada en la altura de la "x" de la fuente del elemento </p>
+        <div class="exs">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis harum porro et quis accusantium voluptatibus aperiam? Vel voluptatibus molestiae asperiores laborum ad minima nam nihil a, unde hic. Aliquid, eaque!
+
+            <section class="ex-child">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam neque fugit quo tempore pariatur asperiores cum et sit dignissimos iste. Ipsum doloremque nam nostrum fugit eveniet unde maxime voluptas non!
+            </section>
+
+        </div>
+    </Article>    
+    
+    <Article id="chs">
+        <hr>
+        <h2>CHs</h2>
+        <p>basada en la anchura del "0" de la fuente del elemento</p>
+        <div class="chs">
+            1234567890
+        </div>
+    </Article>
+    
+    <Article id="porcentajes">
+        <hr>
+        <h2>Porcentajes (%)</h2>
+        <div class="percentages">
+            Caja de bloque
+        </div>
+        <br>
+        <!-- <span class="percentages">
+            Caja de linea
+        </span> -->
+
+        <div class="height-parent">
+            <div class="height-child">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, ea. Vero quaerat voluptatibus libero necessitatibus, laboriosam neque, soluta doloribus facere corporis beatae ad expedita odit ut cumque, commodi sunt enim!
+            </div>
+        </div>
+    </Article>
+
+    <article id="units-viewport">
+        <hr>
+        <h2>Unidades del viewport</h2>
+        <p>vw, vh, vmin, vmax - al tamaño del viewport</p>
+        <ul>
+            <li>vw - ancho del viewport van de 1 a 100</li>
+            <li>vh - alto del viewport van de 1 a 100</li>
+            <li>vmax - entre vw y vh toma el que tenga mayor valor</li>
+            <li>vmax - entre vw y vh toma el que tenga menor valor</li>
+        </ul>
+
+        <p>ejercicio con unidades del viewport: <a href="viewportTesting.html">U-VIEWPORT</a></p>
+
+    </article>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+</body>
+</html> 

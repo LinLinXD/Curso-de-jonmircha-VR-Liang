@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendiendo CSS</title>
+    <meta name="description" content="Esta pagina esta desarrollada con el fin de aprender CSS basico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="icon" href="../IMG/css-3.png">
+    <link rel="stylesheet" href="../CSS/sanitize.css">
+    <link rel="stylesheet" href="../CSS/estilos.css">
+
+</head>
+<body>
+
+
+    <header class="header">
+        <div>
+            <span class="material-symbols-outlined items home-color">
+                home
+            </span>
+        </div>
+
+        <nav>
+            <ul class="items">
+                <li><a href="curso_js.html" class="links">Curso de js</a></li>
+                <li><a href="" class="links">Practicas</a></li>
+            </ul>
+
+        </nav>
+
+        <nav>
+            <ul class="items up-down">
+                <li>
+                    <a href="index.html#end">
+                    <span class="material-symbols-outlined">
+                        arrow_downward
+                    </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html#inicio-css">
+                    <span class="material-symbols-outlined">
+                        arrow_upward
+                    </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <article id="inicio-css">
+    <h1>Aprendiendo CSS</h1>
+    <p> <i>Cascading Style Sheets</i> - Hojas de estilo en cascada. </p>
+
+    
+    <hr>
+        <h2 id="indice">Indice</h2>
+    
+    
+    <ol>
+        <a href="index.html#introduccion-css"> <li>Introducción</li> </a>
+        <a href="curso_js.html"> <li>Curso JavaScript de Jonmircha</li> </a>
+        <a href="flexbox.html"> <li>Curso FLEX BOX de Jonmircha</li> </a>
+        <a href="grid.html"> <li>Curso GRID CSS de Jonmircha</li> </a>
+        <a href="index.html#sintaxisBasica-css"> <li>Sintaxis Basica</li> </a>
+        <a href="index.html#selectoresBasicos-css"> <li>Selectores Basicos</li> </a>
+        <a href="index.html#selectoresAvanzados-css"> <li>Selectores Avanzados</li> </a>
+        <a href="index.html#pseudoclases"> <li>Pseudoclases</li> </a>
+        <a href="index.html#pseudoelementos"> <li>pseudoelementos</li> </a>
+        <a href="index.html#agrupacion-selectores"> <li>Agrupacion de selectores</li> </a>
+        <a href="index.html#algoritmo-css"> <li>El Algoritmo de CSS</li> </a>
+        <a href="index.html#modelo-caja"> <li>Modelo de caja</li> </a>
+        <a href="index.html#pos-css"> <li>Posicionamiento en CSS</li></a>
+        <a href="ejercicios.html"> <li>Ejercicio-1</li></a>
+        <a href="colores.html"> <li>Colores</li></a>
+        <a href="units.html"> <li>Unidades de medida en CSS</li></a>
+        <a href="varFun.html"> <li>Variables y funciones en CSS</li></a>
+        <a href="fonts-text.html"> <li>estilos y fuentes de texto</li></a>
+        <a href="bordes-outlines.html"> <li>bordes y outlines</li></a>
+        <a href="background-properties.html"> <li>Propiedades del fondo (background)</li></a>
+        <a href="images.html"> <li>Estilos de imagenes</li></a>
+        <a href="lists.html"> <li>Estilos de listas</li></a>
+        <a href="tables.html"> <li>Estilos de tablas</li></a>
+        <a href="forms.html"> <li>Estilos de formularios</li></a>
+        <a href="visual-efects.html"> <li>Efectos visuales en CSS</li></a>
+        <a href="scroll-one-page.html"> <li>Efectos de Scroll (Desplazamiento)</li></a>
+        <a href="scroll-snap.html"> <li>Ajuste del Scroll <small>(Efecto Slides Verticales)</small></li></a>
+        <a href="scroll-snap-horizontal.html"> <li>Ajuste del Scroll <small>(Efecto Slides horizontal)</small></li></a>
+        <a href="motion.html"><li>Movimiento en CSS</li></a>
+
+
+    </ol>
+    </article>
+
+    <hr>
+    <article id="introduccion-css">
+    <h2>Introducción a CSS</h2>
+    <p> 
+        CSS es como se visualiza el contenido HTML (lo bonito). Le da la presentación al documento HTML.
+        No confundir con lenguajes de programación, no lo son y aunque no sea un lenguaje de programación, 
+        hay ciertas caracteristicas y/o funciones que permiten aplicar ciertos comportamientos y, hasta ciertos
+        punto, automatizar y/o utilizar algo parecido a la programación. Se pueden hacer animaciones justo 
+        también con CSS.
+    </p>
+
+    <p>
+        Se debe juntar el CSS junto al HTML y la programación JS.
+    </p>
+    <a href="index.html#indice"><img src="../IMG/icons8-flecha-arriba-50.png" alt="Arriba" id="flecha"></a>
+    </article>
+
+    <hr>
+    <article id="sintaxisBasica-css">
+    <h2>Sintaxis basica</h2>
+    <p>Una regla CSS consta de dos partes: </p>
+    <ol>
+        <li>
+            El selector: Es el elemento HTML al que nosotros podemos aplicarle cierto bloque de selección de 
+            estilos (cualquier etiqueta).
+
+        </li>
+
+        <li>
+            Bloque de declaraciones: Cada uno de los atributos que vamos a modificar. Cada atributo que modificamos
+            tendra la siguiente sintaxis -atributo: valor; (esto sera delimitado por los "{}").
+            
+            <pre>
+
+                Ejemplo:
+             <code>
+                h1 {
+                    color: orangered;
+                    background-color: skyblue;
+                }
+             </code>
+            </pre>
+        </li>
+
+    </ol>
+    <a href="index.html#indice"><img src="../IMG/icons8-flecha-arriba-50.png" alt="Arriba" id="flecha"></a>
+    </article>
+
+    <hr>
+    <article id="selectoresBasicos-css">
+    <h2>Selectores basicos</h2>
+    <p>Existen 3 selectores basicos</p>
+    <ol>
+        <li>Etiquetas - Son elementos HTML</li>
+        <li>Identificadores - Accedemos a traves del atributo HTML id (#)</li>
+        <li>Clases - Atributo class (.)</li>
+    </ol>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        Officiis cupiditate sequi ea quod esse reprehenderit. 
+        Officiis debitis maxime excepturi illo voluptas, ipsam 
+        repellat maiores modi voluptatem exercitationem? Illum, ea officiis!
+    </p>    
+    
+    <p id="parrafo-prueba">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        Officiis cupiditate sequi ea quod esse reprehenderit. 
+        Officiis debitis maxime excepturi illo voluptas, ipsam 
+        repellat maiores modi voluptatem exercitationem? Illum, ea officiis!
+    </p> 
+
+    <p class="text-32  bg-skyblue">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        Officiis cupiditate sequi ea quod esse reprehenderit. 
+        Officiis debitis maxime excepturi illo voluptas, ipsam 
+        repellat maiores modi voluptatem exercitationem? Illum, ea officiis!
+    </p>
+
+    <p class="text-20  bg-steelblue text-white">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        Officiis cupiditate sequi ea quod esse reprehenderit. 
+        Officiis debitis maxime excepturi illo voluptas, ipsam 
+        repellat maiores modi voluptatem exercitationem? Illum, ea officiis!
+    </p>
+
+    <p>
+        Cuando se carguen estilos a nivel de etiqueta, se aplican estilos a TODOS los que poseen esas caracteristicas
+        suponiendo que no posean estilos predefinidos por ids o clases. 
+
+        <pre>
+            Ejemplo:
+            <code>
+                p {
+                    color: midnightblue;
+                
+                }
+            </code>
+        </pre>
+    </p>
+
+    <p>
+        Dar estilos con IDs se considera un antipatron (mala practica) porque lo volvemos unico debido al identificador.
+        <pre>
+            Ejemplo:
+            <code>
+                p {
+                    color: midnightblue;
+            
+                }
+            </code>
+    </pre>
+</p>
+    </p>    
+    
+    <p>
+        Dar estilos con clases se considera la mejor manera gracias a que podemos reutilizar codigo.
+        <pre>
+            Ejemplo:
+            <code>
+                #parrafo-prueba {
+                    background-color: skyblue;
+                }
+                
+                .text-32 {
+                    font-size: 32px;
+                }
+                
+                .text-20 {
+                    font-size: 20px;
+                }
+                
+                .bg-steelblue {
+                    background-color:steelblue;
+                }
+                
+                .bg-skyblue {
+                    background-color: skyblue;
+                }
+                
+                .text-white {
+                    color: white;
+                }
+            </code>
+    </pre>
+</p>
+    </p>
+    <a href="index.html#indice"><img src="../IMG/icons8-flecha-arriba-50.png" alt="Arriba" id="flecha"></a>
+    </article>
+
+    <hr>
+    <article id="selectoresAvanzados-css">
+
+    
+    <h2>Selectores avanzados</h2>
+    <h3>Selectores de hijos</h3>
+    <h4>Selector de hijos directos</h4>
+        <p>
+            A lo que se refiere con "selector de hijos directos" es a la posibilidad de poder otorgar estilo a 
+            una etiqueta HTML que este dentro de otra etiqueta, otorgandole, de esta manera, el titulo de "hijo directo".
+
+            <pre>
+
+                ejemplo: 
+
+                    <code> 
+                        HTML:
+                             <img src="../IMG/lista_hijosdirectos.png" alt="codigo_listas" class="imagen-pequeña">               
+                        CSS:
+                                    .hijos-directos > li {
+                                        background-color: springgreen;
+                                    
+                                    }
+
+                    </code>
+            </pre>
+        </p>
+
+        <ul class="hijos-directos">
+            <li><b>Primavera</b></li>
+            <li><b>Verano</b></li>
+            <li><b>Otoño</b></li>
+            <li><b>Invierno</b></li>
+        </ul>
+
+    <h4>Selector de hijos decendientes</h4>
+
+    <p>
+        A lo que se refiere con "selector de hijos decendientes" es a la posibilidad de poder otorgar estilo a 
+        una etiqueta HTML que este dentro de una o varias etiquetas sin importar el orden, o sea que podemos
+        dar estilo apuntando a todo un conjunto de etiquetas.
+
+        <pre>
+
+            ejemplo: 
+
+                <code> 
+                    HTML:
+                           <img src="../IMG/hijos-decendientes.png" alt="codigo_listas" class="imagen-pequeña">               
+                    CSS:
+                                    .hijos-decendientes b {
+                                        background-color: springgreen;
+                                    
+                                    }
+
+                </code>
+        </pre>
+    </p>
+    
+    <ul class="hijos-decendientes">
+        <li><b>Primavera</b></li>
+        <li><b>Verano</b></li>
+        <li><b>Otoño</b></li>
+        <li><b>Invierno</b></li>
+    </ul>
+
+    <h3>Selectores de hermanos</h3>
+    <h4>Selectores de hermanos (en general)</h4>
+    
+    <ul>
+        <li><b>Primavera</b></li>
+        <li class="hermanos-general"><b>Verano</b></li>
+        <li><b>Otoño</b></li>
+        <li><b>Invierno</b></li>
+    </ul>
+
+    <h4>Selectores de hermanos adyacentes</h4>
+
+    <ul>
+        <li><b>Primavera</b></li>
+        <li class="hermanos-adyacentes"><b>Verano</b></li>
+        <li><b>Otoño</b></li>
+        <li><b>Invierno</b></li>
+    </ul>
+
+    <h3>Selectores de atributos</h3>
+    <nav class="selectores-atributos">
+        <ul>
+            <li><a href="https://jonmircha.com" target="_blank">Inicio</a></li>
+            <li><a href="https://jonmircha.com/cursos" target="_blank" class="menu-item cursos button">Cursos</a></li>
+            <li><a href="https://jonmircha.com/blog" target="_blank">Blog</a></li>
+            <li><a href="https://jonmircha.com/hola" target="_blank">Hola</a></li>
+            <li><a href="https://jonmircha.com/mentoria" target="_blank" class="menu-item cursos button">Mentoria</a></li>
+            <li><a href="https://jonmircha.com/taller-minimalista" target="_blank">Taller</a></li>
+            <li><a href="index.html#inicio-css">Volver</a></li>
+            
+        </ul>
+
+
+    </nav>
+
+    <h3>Selector Universal (*)</h3>
+    <p>
+        El selector universal, representado por un asterisco (*), aplica estilos a todos los elementos
+        del documento HTML, a menos de que se este especificando una clase, en dado caso, solo se aplicaria
+        el estilo a las etiquetas seleccionadas por la clase
+    </p>
+  
+    <ul class="selector-universal">
+        <li><b>Primavera</b></li>
+        <li><b>Verano</b></li>
+        <li><b>Otoño</b></li>
+        <li><b>Invierno</b></li>
+    </ul>
+
+    <a href="index.html#indice"><img src="../IMG/icons8-flecha-arriba-50.png" alt="Arriba" id="flecha"></a>
+
+    </article>
+
+    <hr>
+    <article id="pseudoclases">
+        <h2>Pseudoclases</h2>
+        <p>Las pseudoclases en CSS son selectores especiales que te permiten aplicar estilos a elementos 
+            HTML en función de su estado o comportamiento. A diferencia de las clases y los IDs, que se 
+            basan en atributos HTML, las pseudoclases se basan en el estado dinámico de un elemento, como 
+            por ejemplo:
+            
+            <ul>
+                <li> Si el cursor del mouse está sobre el elemento: :hover</li>
+                <li>Si el elemento está enfocado: :focus</li>
+                <li>Si el elemento es un enlace: :link, :visited</li>
+                <li>Si el elemento es el primero de su tipo: :first-child</li>
+                <li> Si el elemento es el último de su tipo: :last-child</li>
+                <li>Si el elemento es un hijo par: :nth-child(even)</li>
+                <li>Si el elemento es un hijo impar: :nth-child(odd)</li>
+                <li> Si el elemento está vacío: :empty</li>
+                <li>Si el elemento está seleccionado: :checked</li>
+                <li>Si el elemento está deshabilitado: :disabled</li>
+            </ul>      
+            </p>
+            
+        <form class="form-pseudoclases">
+            <input type="text" name="nombre" placeholder="escribe tu nombre" required>
+            <br>
+            <input type="email" name="correo" placeholder="escribe tu correo" required>
+            <br>
+            <input type="submit" disabled>
+
+        </form>
+
+        <nav class="menu-pseudoclases">
+            <a href="#seccion1">seccion 1</a>
+            <a href="#seccion2">seccion 2</a>
+            <a href="#seccion3">seccion 3</a>
+            <a href="#seccion4">seccion 4</a>
+
+        </nav>
+        
+        <button class="button-style">Presioname</button>
+
+        <p class="p-pseudoclases">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Nam dolores sunt quas, reiciendis asperiores aliquid nostrum quia mollitia suscipit, 
+            sapiente praesentium reprehenderit adipisci accusamus. Eos eius ex hic laudantium sit.
+        </p>
+
+        <h3>Pseudoclases por posición y tipo</h3>
+
+        <ol class="hechiceros-pseudoclases">
+            <li>Megumi</li>
+            <li>Itadori</li>
+            <li>Choso</li>
+            <li>Gojo</li>
+            <li>Jogo</li>
+            <li>Kenjaku</li>
+            <li>Geto</li>
+            <li>Sukuna</li>
+            <li>Mei</li>
+            <li>Panda</li>
+            <li>Inumaki</li>
+            <li>Yuta</li>
+
+        </ol>
+
+        <article class="articulo-pseudoclases">
+            <header>Esto es un header</header>
+            <p>Esto es un parrafo</p>
+            <div>Esto es una div</div>
+            <p>Esto es un parrafo</p>
+            <section>Esto es una section</section>
+            <p>Esto es un parrafo</p>
+            <div>Esto es una div</div>
+            <p>Esto es un parrafo</p>
+            <footer>Esto es un footer</footer>
+        </article>
+        <br>
+
+    <a href="index.html#indice"><img src="../IMG/icons8-flecha-arriba-50.png" alt="Arriba" id="flecha"></a>
+    </article>
+
+
+    
+    <hr>
+    <article id="pseudoelementos">
+        <h2>Pseudoelementos</h2>
+        <p>
+            <i class="nvidia">Geforce RTX <sup>TM</sup>4080 </i> <span class="precio-nvidia">1100</span>
+            <br>
+            <i class="nvidia">Geforce RTX <sup>TM</sup>4080 Super</i> <span class="precio-nvidia">1150</span>
+        </p>
+
+        <p class="p-pseudoelementos">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi ipsam consectetur illum repellat, 
+            fugiat totam optio non sapiente voluptas sit officiis ex deserunt voluptatum iste, 
+            delectus sed ea facilis explicabo.
+        </p>
+
+
+    <a href="index.html#indice"><img src="../IMG/icons8-flecha-arriba-50.png" alt="Arriba" id="flecha"></a>
+    </article>
+
+    <hr>
+    <article id="agrupacion-selectores">
+        <h2>Agrupacion de selectores</h2>
+
+        
+        <form class="form-agrupar-selectores">
+            <input type="text" name="nombre" placeholder="Escribe tu nombre">
+            
+            <input type="email" name="correo" placeholder="Escribe tu email">
+            
+            <textarea name="comentarios" placeholder="Escribe tu reseña" cols="30" rows="5"></textarea>
+           
+            <input type="submit">
+
+        </form>
+        <br>
+        <a href="index.html#indice"><img src="../IMG/icons8-flecha-arriba-50.png" alt="Arriba" id="flecha"></a>
+
+
+    </article>
+
+    <hr>
+    <article id="algoritmo-css">
+        <h2>Funcionamiento del algoritmo de CSS</h2>
+        <p>
+            El algoritmo de CSS: Es la forma en que el navegador aplica los estilos al documento HTML.
+            Es vital entender este concepto para que se entienda el como se aplica y en algunas ocasiones
+            se sobreescriben las reglas CSS.
+        </p>
+
+        <ol>
+            <li>
+                La cascada:
+                <p> 
+                    Es el mecanismo en que el navegador aplica los estilos. Toma en cuenta lo siguiente
+                    en este orden: 
+                        <ul>
+                            <li>El user Agent (los estilos por defecto del navegador)</li>
+                            <li>Personalizaciones del usuario (del usuario haciendo uso del navegador)</li>
+                            <li>Los estilos de autor</li>
+                        </ul>
+                </p>
+            </li>
+            <li>
+                La especificidad:
+
+                <p>
+                    La especificidad es el peso que tiene un selector cando hay conflicto de estilos.
+                    Se calcula de la siguiente forma:
+
+                    <ul>
+                        <li>Etiquetas y pseudoelementos -------- 0,0,0,1</li>
+                        <li>Clases, atributos y pseudoclases --- 0,0,1,0</li>
+                        <li>Identificadores -------------------- 0,1,0,0</li>
+                        <li>Estilos en línea ------------------- 1,0,0,0</li>
+                        <li>!important ------------------------- rompe la especificidad</li>
+                    </ul>
+
+                </p>
+            
+            </li>
+            <li>
+                La herencia
+                    <p>
+                        La herencia, es la capacidad de un selector de obtener (heredar)
+                        los valores de sus ancestros más cecanos, para aplicarla se usa el valor
+                        inherit, si queremos evitarla podemos asignar otro valor o inicializar
+                        la propiedad en cuestión con el valor initial.
+                    </p>
+
+            </li>
+                
+            <blockquote class="fraseVieja">
+                Más vale estar solo que mal acompañado. - <cite>Anon</cite>
+            </blockquote>
+
+        </ol>
+
+
+        <a href="index.html#indice"><img src="../IMG/icons8-flecha-arriba-50.png" alt="Arriba" id="flecha"></a>
+
+    </article>
+
+    <hr>
+    <article>
+        <h2>Prefijos</h2>
+        <p>
+            En general los prefijos se utilizan para herramientas que aún no son soportadas completamente
+            por los navegadores, de manera que su utiliza los prefijos a continuación para poder usarlos 
+            de manera experimental.
+        </p>
+        <ul>
+            <li>Navegadores de Microsoft: <b>-ms-</b></li>
+            <li>Firefox <b>-moz-</b></li>
+            <li>Todos los demás navegadores <b>-webkit-</b></li>
+        </ul>
+        <a href="index.html#indice"><img src="../IMG/icons8-flecha-arriba-50.png" alt="Arriba" id="flecha"></a>
+    </article>
+
+    <hr>
+    <article id="modelo-caja">
+        <h2>Modelo de caja</h2>
+        <p>
+            Todo en CSS tiene una caja alrededor. Es la forma en que CSS interpreta las etiquetas HTML.
+            Para CSS todo elemento de HTML son una caja (caja de linea o caja de bloque).
+        </p>
+        <p>
+            <pre>
+1. El contenido (content): El contenido (texto) del elemento HTML
+2. El borde (border): Lo que delimita cada uno de los elementos HTML
+3. El relleno (padding): Son las distancias internas (La distancia del borde al contenido)
+4. El márgen (margin): Son las distancias externas (La distancia entre el elemento html y sus elementos hermanos o padres)
+ Dentro del modelo de caja hay que considerar que una caja tendrá 4 lados:
+        </pre>
+            <pre>
+            1. Arriba (top)
+            2. Derecha (right)
+            3. Abajo (bottom)
+            4. Izquierda (left)
+            </pre>
+        </p>
+        <p>
+            Para continuar ir a este link: <a href="modeloCaja.html">Modelo_caja</a>
+        </p>
+
+        <a href="index.html#indice"><img src="../IMG/icons8-flecha-arriba-50.png" alt="Arriba" id="flecha"></a>
+    </article>
+
+    <hr>
+    <article id="pos-css">
+        <h2>Posicionamiento en CSS</h2>
+        <p>
+            Las propiedades FLOAT y POSITION nos permiten modificar la posicion natural de cualquier elemento
+            del documento HTML. 
+        </p>
+
+        <p>
+            El navegador coloca cada elemento teniendo en cuenta el orden en el que aparece en el documento 
+            y su tipo de visualización dependiendo si es un elemento de línea o de bloque.
+        </p>
+
+        <p>
+            Con FLOAT y POSITION podemos modificar este comportamiento.
+        </p>
+
+        <p>Elementos flotantes</p>
+
+        <ul>
+            <li>
+                Float: Convierte un elemento en flotante desplazandolo hasta la zona más a la 
+                izquierda o más a la derecha de la posición en la que originalmente se encontraba.
+            </li>
+            <li>
+                Clear: limpia la flotación (left, right, both)
+            </li>
+        </ul>
+
+        <p>
+            Tipos de Posicionamiento:
+        </p>
+        <ul>
+            <li>static (default)</li>
+            <li>relative</li>
+            <li>absolute</li>
+            <li>fixed</li>
+            <li>sticky</li>
+        </ul>
+
+        <p>
+            Para mover los elementos posicionades se activan las propiedades:
+        </p>
+        <ul>
+            <li>top (vertical - eje y)</li>
+            <li>bottom (vertical - eje y)</li>
+            <li>left (horizontal - eje x)</li>
+            <li>right (horizontal - eje x)</li>
+            <li>z-index (profundidad - eje z)</li>
+        </ul>  
+
+        <p>
+            Las propiedades top y left van a tener preferencia por sobre bottom y right
+            respectivamente
+        </p>
+
+        <p>Estas 5 propiedades no funcionan con el valor de static</p>
+
+        <p>
+            Para continuar ir a este link: <a href="positions.html">pos-css</a>
+        </p>
+        <a href="index.html#indice" id="end"><img src="../IMG/icons8-flecha-arriba-50.png" alt="Arriba" id="flecha"></a>
+    </article>
+
+    <article class="grid-try box">
+        <div class="item">
+            <p>grid item 1</p>
+        </div>
+        <div class="item">
+            <p>grid item 2</p>
+        </div>
+        <div class="item">
+            <p>grid item 3</p>
+        </div>
+        <div class="item">
+            <p>grid item 4</p>
+        </div>
+        <div class="item">
+            <p>grid item 5</p>
+        </div>
+        <div class="item">
+            <p>grid item 6</p>
+        </div>
+        <div class="item">
+            <p>grid item 7</p>
+        </div>
+        <div class="item">
+            <p>grid item 8</p>
+        </div>
+        <div class="item">
+            <p>grid item 9</p>
+        </div>
+    </article>
+    <br><br><br>
+
+
+    
+    
+
+    <script src="../JS/codigo.js"></script>
+
+</body>
+</html>

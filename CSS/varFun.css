@@ -1,0 +1,113 @@
+:root{
+    --default-bg-color: hsl(299, 82%, 62%);
+
+}
+
+
+html {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+
+h1{
+    font-size: clamp(2rem, 1rem + 3vw,2.5rem);
+    background-color: black;
+    color: hsl(0, 0%, 100%);
+    width: fit-content;    	
+    height: auto;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: clamp(4rem,6rem + 3vw, 7rem);;
+
+}
+
+
+
+.header{
+    background-color: white;
+    top:0;
+    position: fixed;
+    width: 100%;
+    height: clamp(3rem,5rem + 3vw, 6rem);
+    border-bottom: thin solid lightgray;
+    
+}
+
+.regresar{
+    width: fit-content;
+    font-size: clamp(1rem,1rem + 1vw, 1.5rem );
+    background-color: hsl(210, 92%, 29%);
+    margin-top: clamp(0.5rem,1rem, 0.7rem );
+    padding:  calc(0.1rem + 0.5vw);
+    border-radius: clamp(0.5rem,1rem, 0.7rem );
+    margin: 20px;
+    
+
+}
+
+.regresar a {
+    text-decoration: none;
+    color: hsl(0, 9%, 87%);
+}
+
+
+.regresar a:hover {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+
+.custom-props-1{
+    --primary-color: gray; 
+    --primary-bg-color:hsl(201, 93%, 27%);
+    --primary-br-color:hsl(0, 88%, 9%);
+    --font-size: 32px;
+
+    background-color: var(--primary-bg-color);
+    border: thick solid var(--primary-br-color);
+}
+
+.custom-props-1 {
+    color: var(--primary-color);
+}
+
+.custom-props-3{ 
+    margin: 1rem;
+    border: thick solid var(--primary-br-color);
+    font-size: var(--font-size);
+    
+}
+
+h1{
+    --primary-color: rgb(0, 123, 139);
+    color: var(--primary-color, orange);
+}
+
+.ch-10{
+
+    --padding-size: 2ch;
+    --num-ch:10ch; 
+    background-color: var(--default-bg-color);
+    font-size: 2rem;
+
+    padding: var(--padding-size);
+    width: calc(var(--num-ch) + var(--padding-size) * 2 );;
+}
+
+
+.min-max{
+    background-color: var(--default-bg-color);
+    width: min(300px,20vw);
+    height: max(200px,25vh);
+}

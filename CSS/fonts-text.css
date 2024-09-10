@@ -1,0 +1,124 @@
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+
+h1{
+    font-size: clamp(2rem, 1rem + 3vw,2.5rem);
+    background-color: black;
+    color: hsl(0, 0%, 100%);
+    width: fit-content;    	
+    height: auto;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: clamp(4rem,6rem + 3vw, 7rem);;
+
+}
+
+
+
+.header{
+    background-color: white;
+    top:0;
+    position: fixed;
+    width: 100%;
+    height: clamp(3rem,5rem + 3vw, 6rem);
+    border-bottom: thin solid lightgray;
+
+    
+}
+
+
+.regresar{
+    display: inline-block;
+    margin: calc(1rem + 2vh) calc(1rem + 2vw);
+    scale: 200%;
+    color: hsl(0,0%,0%);
+
+
+}
+
+.regresar:hover{
+    color: hsl(0, 1%, 18%);
+
+}
+
+
+.font{ 
+
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: 2rem;
+font-weight: 900;
+font-style: italic;
+font-variant: small-caps;
+line-height: 1.5;
+
+
+}
+
+@font-face {
+    font-family:'Quicksand' ;
+    src: url("../FONTS/Quicksand-VariableFont_wght.woff") format('woff');
+    font-display: swap ;
+}
+
+.quicksand{
+    font-family: "Quicksand";
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.anton{
+    font-family: "Anton", sans-serif;
+    font-size: 2rem;
+}
+
+.text{
+    font-size: 2rem;
+    text-align: left;
+    text-decoration: dashed;
+    text-indent: 1rem;
+    text-transform: capitalize;
+    writing-mode: vertical-rl;
+}
+
+.text-overflow{
+    border: thin solid black;
+    background-color: blanchedalmond;
+    font-size: 2rem;
+    width: 50%;
+    text-align: left;
+    text-decoration: dashed;
+    text-indent: 1rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.white-space{
+white-space: pre;
+}
+
+.letter{
+    letter-spacing: 0.5rem;
+}
+
+.word{
+    word-spacing: 0.5rem;
+}
+
+.word-break{
+    word-break:break-all;
+}
+

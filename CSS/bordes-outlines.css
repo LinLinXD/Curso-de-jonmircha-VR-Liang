@@ -1,0 +1,87 @@
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+
+
+body{
+    width: 80vw;
+    height: 200vh;
+    margin-right: auto;
+    margin-left: auto;
+   
+}
+
+h1 {
+    font-size: calc(1.5rem + 1vw);
+    text-align: center;
+}
+
+.navegacion{ 
+    position:sticky;
+    top:0 ;
+    width: 100%;
+    height: calc(4rem + 2vh);
+    border-bottom: 0.5px solid hsla(0, 0%, 0%,0.3);
+    border-bottom-style: dotted;
+    background-color: white;
+
+}
+
+.home{
+    display: inline-block;
+    margin: 2rem;
+    scale: 180%;
+    color: black;
+}
+
+.home:hover{ 
+    color: hsl(0, 2%, 24%);
+}
+
+.box{
+    width: 400px;
+    height: 400px;
+    border: medium solid hsl(0, 100%, 50%);
+    background-color: hsl(0, 0%, 0%);
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.border-radius{
+
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 50%;
+
+}
+
+.border-radius-2{
+    border-radius: 100px 50px /200px 300px;
+}
+
+.border-radius-3{ 
+    border-radius: 50%;
+}
+
+.outline{
+    outline-width: 5px;
+    outline-style: dashed;
+    outline-color: turquoise;
+    outline:thick solid blue;
+    outline-offset: -10rem;
+}
+
+.input-text:focus-visible{
+    outline-color: red;
+    outline-offset: 0px;
+}

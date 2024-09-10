@@ -1,0 +1,70 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    color: hsl(0,0%,100%);
+    font-family: "Roboto",sans-serif
+}
+
+img{
+    max-width: 100%;
+}
+
+
+body{
+    background-color: rgb(24, 23, 23);
+    z-index: 100;
+    height: 3200px;
+    
+}
+
+h1{
+    text-align: center;
+    font-size: calc(1.5rem +2vw);
+}
+
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+    color: inherit;
+}
+
+.navegacion{ 
+    position:sticky;
+    top:0;
+    width: 100%;
+    height: calc(4.5rem + 1vh);
+    border-bottom: 0.5px solid hsla(0, 0%, 0%,0.3);
+    border-bottom-style: dotted;
+    background-color: hsl(0, 0%, 16%);
+
+    z-index: 2000;
+    
+}
+
+.home{
+    display: inline-block;
+    margin: 2rem;
+    scale: 180%;
+    color: hsl(194, 93%, 32%)
+}
+
+.contenido{
+
+
+    width: 80vw;
+    height: 200rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.table{
+    font-size: 3rem;
+
+}
+
+table, th, td {
+    border: medium solid white;
+    border-collapse: collapse;
+}

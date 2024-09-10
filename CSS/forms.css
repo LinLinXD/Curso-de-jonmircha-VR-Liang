@@ -1,0 +1,127 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    color: hsl(0,0%,100%);
+    font-family: "Roboto",sans-serif
+}
+
+img{
+    max-width: 100%;
+}
+
+
+body{
+    background-color: rgb(24, 23, 23);
+    z-index: 100;
+    height: 3200px;
+    
+}
+
+h1{
+    text-align: center;
+    font-size: calc(1.5rem +2vw);
+}
+
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+    color: inherit;
+}
+
+
+
+.navegacion{ 
+    position:sticky;
+    top:0;
+    width: 100%;
+    height: calc(4.5rem + 1vh);
+    border-bottom: 0.5px solid hsla(0, 0%, 0%,0.3);
+    border-bottom-style: dotted;
+    background-color: hsl(0, 0%, 16%);
+
+    z-index: 2000;
+    
+}
+
+.home{
+    display: inline-block;
+    margin: 2rem;
+    scale: 180%;
+    color: hsl(194, 93%, 32%)
+}
+
+.contenido{
+    width: 80vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+.contact-form{
+    --form-bg-color: hsl(0, 0%, 69%);
+    --form-success-color: hsl(116, 82%, 36%);
+    --form-border-color: hsl(0,0%,20%);
+    --form-text-color: hsl(0, 0%, 29%); 
+    --form-submit-reset-color:hsl(231, 66%, 37%);
+
+
+    border: thin solid var(--form-border-color);
+    margin-left:auto;
+    margin-right:auto;
+    padding: 2rem;
+    width: 80%;
+    border-radius: 0.3rem;
+
+    background-color: var(--form-bg-color);
+}
+
+.contact-form >* {
+    padding: .5rem;
+    font-size: 1rem;
+    color: var(--form-text-color);
+    font-family: sans-serif;
+
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 0.25rem;
+
+}
+
+.contact-form input[type="submit"]{
+    width: 25%;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: var(--form-submit-reset-color);
+    color: hsl(0,0%,100%);
+}
+
+.contact-form input[type="reset"]{
+    width: 20%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 0;
+    background-color: var(--form-submit-reset-color);
+    color: hsl(0,0%,100%);
+}
+
+.contact-form input[type="submit"]:hover, .contact-form input[type="reset"]:hover{
+    cursor: pointer;
+    opacity: 80%;
+}  
+
+.contact-form textarea{
+    resize: none;
+}
+
+.contact-form > *:required:invalid{
+    border: thin solid hsl(0, 80%, 43%);
+}
+
+.contact-form > *:required:valid{
+    border: thin solid hsl(114, 84%, 44%);
+}
+

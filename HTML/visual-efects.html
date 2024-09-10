@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../CSS/sanitize.css">
+    <link rel="stylesheet" href="../CSS/visual-efects.css">
+</head>
+<body id="go-up">
+    <nav class="navegacion">
+        <a href="index.html" class="home">
+            <span class="material-symbols-outlined" >home </span>
+        </a>
+
+
+
+        <a href="visual-efects.html#go-up" class="go-up">
+            <span class="material-symbols-outlined">arrow_upward</span>        
+        </a>            
+        
+        <a href="visual-efects.html#go-down" class="go-down">
+            <span class="material-symbols-outlined"> arrow_downward </span>
+        </a>    
+
+    </nav>
+
+    
+
+    <h1>Efectos visuales y animaciones en css</h1>
+    
+    <article id="regresar">
+ 
+        <h2>Indice</h2> 
+        <ol>
+            <li><a href="visual-efects.html#sombras">Sombras en cajas y texto</a></li>
+            <li><a href="visual-efects.html#drop-shadow">Filtro de sombras</a></li>
+            <li><a href="visual-efects.html#degradados">Degradados</a></li>
+        </ol>
+    </article>
+
+
+
+    <article id="sombras">
+        <hr>
+        <h2>Sombras</h2>
+        <div class="box box-shadow"></div>
+        <div class="box box-shadow2">
+            
+        </div>
+        <div class="box box-shadow"><p>sombras</p></div>    
+        
+        <div class="box box-shadow-multiple"><p>Multiples</p></div>
+
+    </article>
+
+
+    <article id="drop-shadow">
+
+        <h2>Filtro de sombras</h2>
+        <div class="box drop-shadow"> <img src="../IMG/css-3.png" alt="Gato gordo"></div>
+
+    </article>
+    
+
+    <article id="degradados">
+        <hr>
+        <h2>Degradados</h2>
+
+        <h3>Lineal</h3>
+        <div class="box linear-gradient"></div>
+        <div class="box linear-gradient2"></div>
+
+        <h3>Radial</h3>
+        <div class="box radial-gradient"></div>
+        <div class="box radial-gradient2"></div>
+
+        <h3>Conico</h3>
+        <div class="box conic-gradient"></div>
+        <div class="box conic-gradient2"></div>
+
+        <h3>Repetir degradados</h3>
+        <div class="box repeat-gradient-linear"></div>
+        <div class="box repeat-gradient-radial"></div>
+        <div class="box repeat-gradient-conic"></div>
+        <div class="box repeat-gradient-conic2"></div>
+        <div class="box repeat-gradient-conic3"></div>
+    </article>
+
+    <article id="filters">
+        <hr>
+        <h2>Filtros</h2>
+
+        <article class="card">
+            <img src="../IMG/gatoGordo.jpeg" alt="gato gordo">
+        </article>
+
+        <h3>Filtros Multiples</h3>
+        <div class="mult-filter">
+            <img src="../IMG/gnw.png" alt="" >
+        </div>
+
+        <h3>Filtros a fondos</h3>
+        <article class="card relative">
+            <img src="../IMG/gatoGordo.jpeg" alt="gato gordo">
+            <div class="backdrop-filter">
+                <h4>Gato gordisimo</h4>
+            </div>
+        </article>
+
+        <article class="card relative">
+            <img src="../IMG/gatoGordo.jpeg" alt="gato gordo">
+            <div class="backdrop-filter-multiple">
+                <h4>Gato gordisimo</h4>
+            </div>
+        </article>
+
+    </article>
+
+    <article>
+        <hr>
+        <h2>Modos de mezcla</h2>
+        <h3>Modos de mezcla a imagenes</h3>
+        <article class="card relative blend-mode">
+            <img src="../IMG/gatoGordo.jpeg" alt="gato gordo">
+            <img class="absolute" src="../IMG/gatoBilocho.jpg" alt="gato chiquito bilocho" >
+        </article>
+
+        <h3>Modos de mezcla a fondos</h3>
+
+        <div class="card blend-mode-back">
+        </div>
+
+        <hr>
+    </article>
+
+    <h2>Mascaras (clip-path)</h2>
+    <article class="card clip-path">
+        <img src="../IMG/gatoBilocho.jpg" alt="gato b">
+    </article>
+
+    <h2>Formas (shape-outside)</h2>
+    <article class="shapes">
+        <h3>Ejemplos de formas y siluetas entre textos e imagenes</h3>
+        <img src="../IMG/gatoBilocho.jpg" alt="bilocho gato" class="float-right shape-1">
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam temporibus dolores consectetur quod voluptates deserunt, architecto exercitationem blanditiis consequuntur veniam inventore autem! Vitae eius adipisci temporibus repellendus quisquam, dolor beatae. lorem</p>   
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam temporibus dolores consectetur quod voluptates deserunt, architecto exercitationem blanditiis consequuntur veniam inventore autem! Vitae eius adipisci temporibus repellendus quisquam, dolor beatae.</p>  
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam temporibus dolores consectetur quod voluptates deserunt, architecto exercitationem blanditiis consequuntur veniam inventore autem! Vitae eius adipisci temporibus repellendus quisquam, dolor beatae.</p>   
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam temporibus dolores consectetur quod voluptates deserunt, architecto exercitationem blanditiis consequuntur veniam inventore autem! Vitae eius adipisci temporibus repellendus quisquam, dolor beatae.</p>
+        <img src="../IMG/gatoBilocho.jpg" alt="bilocho gato" class="float-left shape-2">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam temporibus dolores consectetur quod voluptates deserunt, architecto exercitationem blanditiis consequuntur veniam inventore autem! Vitae eius adipisci temporibus repellendus quisquam, dolor beatae.</p>   
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam temporibus dolores consectetur quod voluptates deserunt, architecto exercitationem blanditiis consequuntur veniam inventore autem! Vitae eius adipisci temporibus repellendus quisquam, dolor beatae.</p>  
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam temporibus dolores consectetur quod voluptates deserunt, architecto exercitationem blanditiis consequuntur veniam inventore autem! Vitae eius adipisci temporibus repellendus quisquam, dolor beatae.</p>   
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam temporibus dolores consectetur quod voluptates deserunt, architecto exercitationem blanditiis consequuntur veniam inventore autem! Vitae eius adipisci temporibus repellendus quisquam, dolor beatae.</p>
+        <img src="../IMG/gatoBilocho.jpg" alt="bilocho gato" class="float-right shape-3">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam temporibus dolores consectetur quod voluptates deserunt, architecto exercitationem blanditiis consequuntur veniam inventore autem! Vitae eius adipisci temporibus repellendus quisquam, dolor beatae.</p>   
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam temporibus dolores consectetur quod voluptates deserunt, architecto exercitationem blanditiis consequuntur veniam inventore autem! Vitae eius adipisci temporibus repellendus quisquam, dolor beatae.</p>  
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam temporibus dolores consectetur quod voluptates deserunt, architecto exercitationem blanditiis consequuntur veniam inventore autem! Vitae eius adipisci temporibus repellendus quisquam, dolor beatae.</p>   
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam temporibus dolores consectetur quod voluptates deserunt, architecto exercitationem blanditiis consequuntur veniam inventore autem! Vitae eius adipisci temporibus repellendus quisquam, dolor beatae.</p>
+    </article>
+
+
+    <div id="go-down"></div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

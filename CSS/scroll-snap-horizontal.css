@@ -1,0 +1,118 @@
+
+html {
+    box-sizing: border-box;
+    font-family: "Roboto";
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+    color: inherit;
+}
+
+ul{
+    margin: 0;
+}
+
+li{
+    list-style-type: none;
+}
+
+.header{
+    background-color: hsla(157, 54%, 64%,.65);
+    display: flex;
+    width: 100%;
+    height: calc(3.25rem + 2vh);
+    z-index: 2000;
+    flex-flow: row nowrap;
+}
+
+.hud-container{
+    display: flex;
+    flex-flow: inherit;
+    width: 20%;
+   
+
+}
+
+.hud{
+    margin-left: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.items{
+    display: inline-block;
+}
+
+.items span{
+    font-size: calc(1.5rem + .5vw);
+}
+
+.links-container{
+    margin-left: 2rem;
+    width: 45%;
+    display: flex;
+
+}
+.links{
+    display: flex;
+    display: flex;
+    align-items: center;
+    gap: 3rem
+}
+
+.links-items{
+    padding: 1rem;
+    display: inline-block;
+}
+
+.carrusel{ 
+    border: thick solid black;
+    width: 50%;
+    height: 50vh;
+    overflow-x: hidden;
+    display: flex;
+    align-items: stretch;
+    margin: 100px auto;
+}
+
+.carrusel-container{ 
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5,100%);
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.carrusel-slide{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    background-color: hsl(195, 66%, 52%);
+    scroll-snap-align: center;
+}
+
+.carrusel-slide:nth-child(even){
+    background-color: hsl(209, 49%, 42%);
+}
+
+.gradient-text{
+    background-image: linear-gradient(45deg,magenta,yellow);
+    -ms-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+
+}
+
+h3{
+    font-size: 3vw;
+}

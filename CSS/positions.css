@@ -1,0 +1,103 @@
+html {
+    font-family: sans-serif ;
+    scroll-behavior: smooth;
+}
+
+body {
+
+    max-width: 800px;
+    height: auto;
+    margin-left: auto;
+    margin-right: 600px;
+    box-sizing: border-box;
+    position: relative; /* Necesario para posicionar el nav relativo al body */
+}
+
+h1 {
+    text-align: center;
+    margin-top: 130px;
+}
+
+.static { 
+    background-color: yellow;
+    position:static;
+    top: 10px;
+    left: 10px;
+}
+
+.relative{
+    background-color: aqua;
+    position: relative;
+    height: 50px;
+    top: 50px;
+    left: 50px;
+}
+
+.volver-arriba{
+    width: 25px;
+    height: 25px;
+}
+
+.dist-hr{
+    margin: 50px 0px 0px 0px;
+}
+
+.absolute{
+    background-color:dimgrey;
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+}
+
+.relative-parent{
+    background-color: khaki;
+    width: 600px;
+    height: 50px;
+    position: relative;
+}
+
+.absolute-child{
+    background-color: lightcoral;
+    position: absolute;
+    left: 0px;
+    top:15px;
+}
+
+.fixed{
+    background-color: beige;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    margin: 0px 0px 10px 0px;
+}
+
+
+.pos-sticky {
+    position: sticky;
+    top: 130px; /* Posicionamiento inicial del sticky */
+    left: 0;
+    width: 200px;
+    height: auto;
+    margin-left: 102%;
+    margin-top: 50px; /* Espacio en blanco superior */
+}
+
+.z-index-1,.z-index-2 {
+    background-color: chartreuse;
+    border: thin solid black;
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.z-index-2 {
+    top: -200px;
+    left: 150px;
+    z-index: 100;
+}
+
+.z-index-1 {
+    z-index: 200;
+}

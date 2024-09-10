@@ -1,0 +1,374 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    color: hsl(0, 0%, 0%);
+    font-family: "Roboto"
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    z-index: 100;
+    height: 7200px;
+    
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+    color: inherit;
+}
+
+h1{
+    text-align: center;
+    font-size: calc(1.5rem +2vw);
+}
+
+h2{
+    margin-left: 20px;
+}
+
+.navegacion{ 
+    position:sticky;
+    top:0;
+    width: 100%;
+    height: calc(4.5rem + 1vh);
+    border-bottom: 0.5px solid hsla(0, 0%, 0%,0.3);
+    border-bottom-style: dotted;
+    background-color: hsl(0, 0%, 16%);
+    z-index: 2000;
+}
+
+.home{
+    display: inline-block;
+    margin: 2rem;
+    scale: 180%;
+    color: hsl(194, 93%, 32%)
+}
+
+.go-up{
+    display: inline-block;
+    margin: 2rem;
+    margin-left: 85vw;
+    scale: 200%;
+    color: hsl(194, 93%, 32%)
+}
+
+.go-down{
+    display: inline-block;
+    margin: 2rem;
+    margin-left: 1vw;
+    scale: 200%;
+    color: hsl(194, 93%, 32%)
+}
+
+
+.box{
+    border: medium solid hsl(0, 0%, 0%);
+    margin: 70px;
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+/* SHADOWS */
+
+.box-shadow{
+    /* box-shadow: mov-x mov-y blur-radius spread-blur color insert/outset */
+    box-shadow: 1rem 1rem 1rem 1rem hsl(0, 0%, 0%,0.5);
+
+         /* box-shadow: mov-x mov-y blur-radius COLOR */
+
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 1rem 1rem 1rem hsl(0,0%,0%) ;
+
+
+}
+.box-shadow2{
+    box-shadow: -1rem 1rem 2rem .5rem hsla(0, 100%, 50%, 0.5) inset;
+}
+
+.box-shadow-multiple{
+    box-shadow: 1rem 1rem 1rem 1rem hsl(0, 0%, 0%,0.5), -1rem 1rem 2rem .5rem hsla(0, 100%, 50%, 0.5) inset;
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 1rem 1rem 1rem hsl(0,0%,0%), -1rem -1rem 0.5rem hsl(179, 79%, 54%) ;
+
+}
+
+
+/* Filtro de sombra (FILTER) */
+
+.drop-shadow img{
+    /* filter: drop-shadow(mov-x mov-y blur-radius color); */
+    max-width: 100%;
+    /* box-shadow:  1rem 2rem .5rem hsla(0, 100%, 50%, 0.5); */
+
+
+    filter: drop-shadow(1rem 1rem 1rem hsl(0, 67%, 41%)); 
+}
+
+/* DEGRADADOS */ 
+
+.linear-gradient{
+    background-image: linear-gradient(180deg,red,green,black,white,blue );
+    background-image: linear-gradient(360deg,red,green,black,white,blue );
+    background-image: linear-gradient(to right,red,green,black,white,blue );
+    background-image: linear-gradient(to left,red,green,black,white,blue );
+    background-image: linear-gradient(to bottom right,red,green,black,white,blue );
+    background-image: linear-gradient(to bottom left,red,green,black,white,blue );
+    background-image: linear-gradient(to top left,red,green,black,white,blue );
+    background-image: linear-gradient(90deg,red,green,black,white,blue );
+}
+
+.linear-gradient2{
+    background-image: linear-gradient(90deg,magenta 30%,cyan 50%, purple);
+    background-image: linear-gradient(90deg, yellow 50%,blue 50% 75%, red 75%);
+}
+
+.radial-gradient{
+    background-image: radial-gradient(circle 4rem,cyan,magenta, yellow);
+    background-image: radial-gradient(
+        circle 100px,
+        cyan 30%,
+        magenta 60%, 
+        yellow 90%
+        );    
+    background-image: radial-gradient(
+        circle 100px at top left,
+        cyan 30%,
+        magenta 60%, 
+        yellow 90%
+        );    
+    background-image: radial-gradient(
+        ellipse 50px 100px,
+        cyan 30%,
+        magenta 60%, 
+        yellow 90%
+        );
+}
+
+.radial-gradient2{
+    background-image: radial-gradient(circle 100px, red 50%, white 50% );
+
+}
+
+.conic-gradient{
+    background-image: conic-gradient(red, green, blue);
+    background-image: conic-gradient(red 0% 50%, green 60%, blue 80%);
+    background-image: conic-gradient(
+        red 0deg 90deg,
+        green 120deg 240deg,
+        blue 270deg
+    
+    );    
+    
+    background-image: conic-gradient(
+        from 90deg,
+        red 0deg 90deg,
+        green 120deg 240deg,
+        blue 270deg
+    
+    );
+
+}
+
+.conic-gradient2{
+    background-image: conic-gradient(
+        from 90deg,
+        red 0deg 120deg,
+        white 120deg 240deg,
+        blue 240deg
+    );
+}
+
+.repeat-gradient-linear{
+    background-image: repeating-linear-gradient(red 0 10px, green 10px 20px, blue 20px 30px);
+    background-image: repeating-linear-gradient(90deg,red 0 10px, green 10px 20px, blue 20px 30px);
+}
+
+.repeat-gradient-radial{
+    background-image: repeating-radial-gradient(red 0 20px,green 20px 40px,blue 40px 60px);
+    background-image: repeating-radial-gradient(at top,red 0 20px,green 20px 40px,blue 40px 60px);
+
+}
+
+.repeat-gradient-conic{
+    background-image: repeating-conic-gradient(red 0 8%,green 8% 16%,blue 16% 24%);
+
+
+}
+
+
+.repeat-gradient-conic2{
+    border-radius: 50%;
+    background-image: conic-gradient(pink 0 45%, magenta 45% 65%, purple 65%);
+
+}
+
+.repeat-gradient-conic3{
+    border-radius: 50%;
+    background-image: radial-gradient(circle 150px,white 0 40%, black 40% 42%, transparent 42%),conic-gradient(pink 0 45%, magenta 45% 65%, purple 65%);
+}
+
+.card{
+    border: thick solid hsl(0, 0%, 0%);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+    width: 700px;
+    height: 400px;
+  
+
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+
+    filter:blur(0.1rem);
+    filter: brightness(0.5); /* de 0 a 1 */
+    filter:contrast(0.5); /* de 0 a 1 */
+    filter:grayscale(1); /* de 0 a 1 */
+    filter: sepia(.25); /* de 0 a 1 */
+    filter:hue-rotate(180deg);
+    filter: invert(1); /* de 0 a 1 */
+    filter: opacity(0);
+    filter: saturate(.5);
+    filter: drop-shadow(1rem 1rem 1rem steelblue);
+    filter: none;
+}
+
+.mult-filter{
+    width: 600px;
+    height: 400px;
+    margin: 150px auto;
+
+    border: medium solid hsl(0, 0%, 0%);
+}
+
+.mult-filter img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center center;
+    filter: drop-shadow(1rem 1rem 1rem hsl(185, 90%, 51%)) saturate(.5) brightness(.6) grayscale(.67);
+}
+
+.relative{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+.backdrop-filter{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.backdrop-filter h4{
+    border-radius: 1rem;
+    padding: 2rem;
+    font-size: 3rem;
+    background-color: hsla(312, 100%, 66%, 0.3);
+    backdrop-filter: blur(.25rem )
+
+}
+
+.backdrop-filter-multiple{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.backdrop-filter-multiple h4{
+    border-radius: 1rem;
+    padding: 2rem;
+    font-size: 3rem;
+    color: #fff;
+    background-color: hsla(294, 97%, 64%, 0.5);
+    backdrop-filter: blur(1rem) hue-rotate(180deg) invert(1);
+
+
+}
+
+.blend-mode img{
+    mix-blend-mode:multiply   ;
+}
+
+.blend-mode-back{
+    background-image: url("../IMG/gatoBilocho.jpg"), url("../IMG/gatoGordo.jpeg");
+    background-size: contain;
+    background-blend-mode: darken;
+}
+
+.clip-path{
+    clip-path: circle(6rem );
+    clip-path: circle(6rem at left);
+    clip-path: circle(6rem at left bottom);
+    clip-path: circle(6rem at 30% 20%);
+    clip-path: ellipse(6rem 10rem at 30% 50%);
+    clip-path: inset(2rem 5rem 0.4rem 7rem round 1rem);
+    clip-path: polygon(0 0, 50% 100%, 100% 0% );
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+
+}
+
+.shapes{
+    border: thick solid black;
+    padding: 1rem;
+    margin: 0 auto;
+    max-width: 800px;
+ 
+}
+
+.shapes img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    object-position: 0 50%;
+}
+
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+
+.shape-1{
+    margin: 4rem 0rem 4rem 0;
+    shape-outside:circle()
+}
+.shape-2{
+    margin: 4rem 2rem 4rem 0;
+    shape-outside: circle();
+}
+.shape-3{
+    margin: 4rem 0rem 4rem 2rem;
+    shape-outside:polygon(89% 8%, 74% 1%, 61% 1%, 43% 3%, 28% 8%, 25% 14%, 20% 24%, 17% 29%, 11% 33%, 7% 42%, 6% 52%, 15% 57%, 23% 57%, 33% 56%, 43% 60%, 45% 64%, 47% 70%, 57% 77%, 68% 74%, 75% 64%, 79% 58%, 86% 56%, 93% 58%, 98% 56%, 96% 13%, 99% 22%, 99% 37%, 100% 49%);
+}
+

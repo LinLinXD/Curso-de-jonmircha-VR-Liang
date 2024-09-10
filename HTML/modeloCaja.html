@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caja en CSS</title>
+    <link rel="stylesheet" href="../CSS/modeloCaja.css">
+</head>
+
+
+<body>
+    
+    <h1>Modelo de caja</h1>
+
+    <article id="indice">
+        <h2>Indice</h2>
+        <ol>
+            <li><a href="index.html">regresar</a></li>
+            <li><a href="modeloCaja.html#cajas-linea-bloque">Cajas de linea y bloque</a></li>
+            <li><a href="modeloCaja.html#propiedad-display">Propiedad display</a></li>
+            <li><a href="modeloCaja.html#propiedad-visibility">Propiedad visibility</a></li>
+            <li><a href="modeloCaja.html#propiedad-overflow">Propiedad overflow</a></li>
+            <li><a href="modeloCaja.html#tamaño-caja">Propiedad tamaño de caja</a></li>
+            <li><a href="modeloCaja.html#Float&Clear">Propiedad Float y Clear</a></li>
+            <li><a href="modeloCaja.html#colapso_margenes_verticales">Colapso de margenes verticales</a></li>
+            <li><a href="modeloCaja.html#adicion_margenes_horizontales">Adicion de margenes horizontales</a></li>
+            <li><a href="modeloCaja.html#adicion_margenes_horizontales">Centrado de cajas</a></li>
+            
+
+        </ol>
+    
+        <br>
+        <a href="modeloCaja.html#indice"><img src="../IMG/icons8-flecha-arriba-50.png" alt="Arriba" class="volver"></a>
+    </article>
+
+    <hr>
+    <article>
+        <h2 class="prueba">Prueba</h2>
+
+        <span>Jugando con padding y margin: </span>
+        <div class="caja-uno">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Iure, amet explicabo quos reiciendis eveniet id nobis dolorum voluptas provident aperiam. 
+            Eos laudantium magnam harum quam voluptatum unde veritatis deserunt ipsum.</div>
+    
+        <div class="caja-dos">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Iure, amet explicabo quos reiciendis eveniet id nobis dolorum voluptas provident aperiam. 
+        Eos laudantium magnam harum quam voluptatum unde veritatis deserunt ipsum.</div>
+    </article>
+
+
+    
+    <hr>
+    <article id="cajas-linea-bloque">
+        <h2>Cajas de linea y bloque</h2>
+        <div class="diseño-div">
+            <h3>Caja de linea</h3>
+            <ul class="diseño-ul">
+                <li>Ocupan el espacio necesario para mostrar su contenido</li>
+                <li>No tienen dimensiones modificables (alto, ancho)</li>
+                <li>Permiten otros elementos a su lado</li>
+                <li>
+                    Padding y margin solo empujan a elementos adyacentes en horizontal, NUNCA
+                    EN VERTICAL
+                </li>
+            </ul>
+            <h3>Caja de bloque</h3>
+            <ul class="diseño-ul">
+                <li>Ocuapn todo el ancoho disponible, lo que genera saltos de linea</li>
+                <li>Tienen dimensiones modifcables (alto, ancho)</li>
+                <li>
+                    No permiten otros elementos a su lado (aunque especifique un ancho, siguen 
+                    ocupando todo el espacio disponible a lo ancho, generando saltos de linea).
+                </li>
+            </ul>
+        </div>
+
+        <a href="modeloCaja.html#indice"><img src="../IMG/icons8-flecha-arriba-50.png" alt="Arriba" class="volver"></a>
+
+
+    </article>
+
+    <hr>
+    <article id="propiedad-display">
+        <h2>Display</h2>
+        <h3>Propiedad display</h3>
+        <ul>
+            <li>inline</li>
+            <li>block</li>
+            <li>inline-block</li>
+            <li>none</li>
+            <li>table</li>
+            <li>list-item</li>
+            <li>flex</li>
+            <li>grid</li>
+        </ul>
+
+        <p>Ejemplo de linea de caja de bloque y de linea con inline y block respectivamente: </p>
+
+        <div class="linea">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Facilis dolorem molestiae culpa adipisci dolores, quo cumque, 
+            enim eaque obcaecati dicta ea omnis autem quae blanditiis magni! A quo facere ut.
+        </div>
+        <span> Hola mundo </span>
+        <span class="bloque">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Est quod illo distinctio error harum quisquam enim voluptates, animi, 
+            in ab laudantium quos accusamus veritatis rerum labore. Reprehenderit recusandae temporibus explicabo.
+        </span>
+        <br>
+        <span class="enlineabloque">
+            Probando etiqueta inline block y aqui viene el Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Iste dignissimos dolor voluptatibus in explicabo quos, 
+            quia assumenda nulla molestias voluptas sequi architecto, 
+            itaque delectus! Amet beatae aperiam voluptate ab quisquam!
+        </span>
+        <span>XDXD</span>
+        <div class="none">
+            Iste dignissimos dolor voluptatibus in explicabo quos, 
+            quia assumenda nulla molestias voluptas sequi architecto, 
+            itaque delectus! Amet beatae aperiam voluptate ab quisquam!
+        </div>
+
+
+
+        <a href="modeloCaja.html#indice"><img src="../IMG/icons8-flecha-arriba-50.png" alt="Arriba" class="volver"></a>
+
+
+    </article>
+
+    <hr>
+    <article id="propiedad-visibility">
+        <h2>Propiedad visibility</h2>
+        <p>
+            Cuando quieres ocultar un elemento y no te importa el espacio que este utilice, utiliza el display:none.
+            Si lo que deseas es ocultarlo y conservar el espacio, usa visibility: hidden.
+        </p>
+        <div class="caja-hidden">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Est quod illo distinctio error harum quisquam enim voluptates, animi, 
+            in ab laudantium quos accusamus veritatis rerum labore. Reprehenderit recusandae temporibus explicabo.
+        </div>
+
+        <div>Este es un div</div>
+    </article>
+
+    <hr>
+    <article id="propiedad-overflow">
+        <h2>Propiedad overflow</h2>
+
+        <p class="overflow">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Est quod illo distinctio error harum quisquam enim voluptates, animi, 
+            in ab laudantium quos accusamus veritatis rerum labore. Reprehenderit recusandae temporibus explicabo.
+        </p>
+    </article>
+
+    <hr>
+    <article id="tamaño-caja">
+        <h2>Tamaño de caja</h2>
+        <div class="box-sizing-content">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Amet, facilis vel eveniet ad aut aspernatur laboriosam totam tenetur veniam laborum sit eos 
+            voluptatem fugiat sequi nostrum. Minima, delectus amet? Libero. 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, 
+            dignissimos provident pariatur tempore sapiente unde ducimus omnis molestias.
+        </div>
+        <div class="box-sizing-border">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Amet, facilis vel eveniet ad aut aspernatur laboriosam totam tenetur veniam laborum sit eos 
+            voluptatem fugiat sequi nostrum. Minima, delectus amet? Libero. 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, 
+            dignissimos provident pariatur tempore sapiente unde ducimus omnis molestias.
+        </div>
+
+
+    </article>
+    
+    <hr>
+    <article id="Float&Clear">
+        <h2>Propiedad Float & Clear</h2>
+        <p>
+            <article class="container">
+                <section class="item">Seccion 1</section>
+                <section class="item">Seccion 2</section>
+                <section class="item">Seccion 3</section>
+            </article>
+        </p>
+
+        <p> OTRO EJEMPLO DE FLOAT Y COMO ARREGLARLO CON CLEAR. </p>
+
+        <p>
+            <article class="container_2">
+                <section class="float_left">Seccion 1</section>
+                
+                <section class="float_right">Seccion 3</section>
+            </article>
+           
+        </p>
+        <div class="clearfix"></div>
+
+        <p>MIREN COMO SE ARREGLA CON EL CLEARFIX</p>
+       
+
+    </article>
+
+    <hr>
+    <article id="colapso_margenes_verticales">
+        <h2>Colapso de margenes verticales</h2>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            In distinctio quam doloribus perferendis nemo ullam quia, 
+            facilis doloremque illum assumenda error voluptatum ipsum blanditiis at illo laboriosam? 
+            Earum, sequi debitis!</div>
+        <article class="margin-collapse">
+            <section>Seccion 1</section>
+            <section>Seccion 2</section>
+        </article>
+        <p>xd</p>
+
+    </article>    
+    <hr>
+    <article id="adicion_margenes_horizontales">
+        <h2>Adicion de margenes horizontales</h2>
+        <section class="margin-collapse-span">
+            <span>Hola mundo</span>
+            <span>Adios mundo</span>
+        </section>
+
+    </article>    
+
+    <hr>
+    <article id="centrado_cajas">
+        <h2>Centrado de cajas</h2>
+        <article class="sitio">
+            <header>Esta es la cabecera</header>
+            <main>Contenido principal</main>
+            <footer>Pie de pagina</footer>
+        </article>
+
+
+    </article>
+
+
+
+
+
+
+</body>
+
+
+
+</html>

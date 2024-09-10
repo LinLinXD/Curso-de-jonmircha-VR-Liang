@@ -1,0 +1,210 @@
+body{
+    margin: 8px;
+}
+
+.volver {
+    scale: 70%;
+
+}
+
+* {
+    font-family: sans-serif;
+
+}
+
+h1{
+    width: 500px; ;
+    height: 200px;
+
+    /* Propiedades shorthand (agrupan propiedades) */
+    border-color: greenyellow;
+    border-top-color: black;
+    border-width: thick; /* thin 1px; medium 3px, thick 5px*/
+    border-style:solid;
+    
+    border: 2px blue dotted /* Es necesario dar espaciado */
+}
+
+.prueba{ 
+    width: 100px;
+    height: 50px;
+    border: green solid medium;
+    font-size: 39px;
+
+    /* Lo que ocurre aquí es que estamos delimitando tanto el ancho como el alto del cotenido y
+    también mostramos el "border" de nuestro elemento HTML y al momento de limitarle tanto el ancho como el alto 
+    podemos observar lo que pasa cuando el contenido supera la capacidad*/
+}
+
+.caja-uno,.caja-dos {
+    background-color: chocolate;
+    border: medium solid orange;
+    /* 
+    Maneras de utilizar padding y margin.
+
+    si se inseta un solo valor se dirige a los 4 lados de la caja.
+
+    si se insertan dos valores, se dirige el primer valor a los lados verticales (t/b)
+    y el otro valor se dirige a los lados horizontales (l/r)
+
+    si se insertan tres valores, el primero se dirige a top, el segundo a los lados horizontales 
+    y el tercer valor a bottom.
+
+    si se insertan cuatro valores toca pensar como si fuese manecillas del reloj, el primer valor 
+    para top, el segundo para right, el tercero para bottom y el cuarto para left.
+    
+    */
+
+
+
+    padding: 20px;
+    margin: 20px; 
+
+    padding: 20px 40px;
+    margin: 50px 80px; 
+
+    padding: 20px 50px 5px;
+    margin: 10px 5px 35px;
+
+    padding: 3px 23px 50px 2px;
+    margin: 5px 0px 10px 35px;
+
+}
+
+.diseño-div {
+    margin: 10px 20px 10px;
+    
+}
+
+.diseño-div 
+    
+.diseño-ul {
+        list-style-type: "- ";
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.linea{
+    display: inline;
+    color: white;
+    background-color: olive;
+}
+
+.bloque{
+    color: white;
+    background-color: olive;
+    display: block;
+}
+
+.enlineabloque{
+    background-color: olive;
+    display: inline-block;
+
+}
+
+.none{
+    display: none;
+
+}
+
+.caja-hidden {
+    background-color: olive;
+    color: white;
+    border-style: solid;
+    border-color:black;
+}
+.caja-hidden {
+    visibility: hidden ; /* el valor default: visible. el otro valor: hidden */
+}
+
+.overflow {
+    width: 200px;
+    height: 100px;
+    border: green solid medium;
+    
+    overflow-y: scroll;
+
+}
+
+.box-sizing-content,.box-sizing-border{
+    background-color: deepskyblue;
+    box-sizing: content-box;
+    width: 500px;
+    height: 250px;
+    padding: 10px;
+    border: thick solid black;
+}
+.box-sizing-border{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 600px;
+    background-color: lightblue;
+    margin-top: 20px;
+    height: 200px;
+}
+
+.container > *{
+    width: 200px;
+    float: left;
+    border: medium solid black;
+    box-sizing: border-box;
+}
+
+.container_2 > * {
+
+    box-sizing: border-box;
+    background-color: lightcoral;
+}
+
+.float_right {
+    float: right;
+}
+
+.float_left {
+    float: left;
+}
+
+.clearfix {
+    clear:both;
+}
+
+/*Colapso de margenes verticales*/
+.margin-collapse{
+    background-color: skyblue;
+
+}
+
+.margin-collapse section {
+    border: thin solid black;
+    margin-top: 16px; 
+    margin-bottom: 16px;
+}
+
+
+.margin-collapse-span span {
+    display: inline-block ;
+    background-color: skyblue;
+    border: thin solid black;
+    margin-right: 16px;
+    margin-left: 16px;
+}
+
+/* CENTRADO DE CAJAS */
+
+.sitio{
+    border: thin solid black;
+    background-color: thistle;
+    width: 800px;
+    height: 1000px; 
+    padding: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+ 

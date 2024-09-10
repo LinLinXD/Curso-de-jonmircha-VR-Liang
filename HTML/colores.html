@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colores en CSS</title>
+    <link rel="stylesheet" href="../CSS/sanitize.css">
+    <link rel="stylesheet" href="../CSS/colores.css">
+</head>
+
+
+<body>
+    <h1>Colores en CSS</h1>
+    <h2>Indice</h2>
+    <ul>
+        <li><a href="#colores_nombre">Colores por nombre</a></li>
+        <li><a href="#colors_hexadecimal">Colores por sistema hexadecimal</a></li>
+        <li><a href="#colors_rgb">Colores por RGB</a></li>
+        <li><a href="#trans-currColor">Transparent y current color</a></li>
+    </ul>
+
+    <article id="colores_nombre">
+        <hr>
+        <h2>Colores por nombre</h2>
+        <p class="color-by-name">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quae blanditiis saepe, eum sunt illo facilis aperiam, vero eligendi at doloribus sed? Nobis eius soluta sed quia, modi dignissimos minus?
+        </p>
+
+    </article>    
+    
+    <article id="colors_hexadecimal">
+        <hr>
+        <h2>Colores por Sistema Hexadecimal</h2>
+        <p>
+            El sistema Hexadecimal se basa en 6 caracteres que rondan los siguientes numeros y/o letras: 0123456789ABCDEF
+        </p>
+        <p>
+            Algo que cabe mencionar es el hecho de que el sistema RGB se compone del rojo en sus primeros dos
+            caracteres, del verde en sus 4 y 5 caracter y del azul en sus ultimos dos. #FF0066
+        </p>
+        <p>Se pueden agregar dos carecteres más para definir la opacidad (va desde el 0 hasta el 99)</p>
+        <p class="colors-by-hexadecimal">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quae blanditiis saepe, eum sunt illo facilis aperiam, vero eligendi at doloribus sed? Nobis eius soluta sed quia, modi dignissimos minus?
+        </p>
+
+    </article>
+
+    <article id="colors_rgb">
+        <hr>
+        <h2>Colores por RGB</h2>
+        <p>
+            El sistema RGB se basa en 3 numeros divididos por comas que van desde el 0 hasta el 255.
+        </p>
+        <p> 
+            La forma en la que se escribe es de la siguiente manera: rgb(0,0,0)
+        </p>
+        <p>
+            Se puede añadir un numero más que va del 0 al 1 para definir la opacidad: rgb(0,0,0,0.5)
+        </p>
+
+        <p class="colors-rgb">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quae blanditiis saepe, eum sunt illo facilis aperiam, vero eligendi at doloribus sed? Nobis eius soluta sed quia, modi dignissimos minus?
+        </p>        
+        
+        <p class="colors-rgb-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quae blanditiis saepe, eum sunt illo facilis aperiam, vero eligendi at doloribus sed? Nobis eius soluta sed quia, modi dignissimos minus?
+        </p>
+
+    </article>  
+
+    <article id="sistema_HSL">
+      <hr>
+        <h2>Sistema de color HSL (Tono - Saturación - Luminosidad)</h2>
+
+        <p>
+            El primer valor es Hue (Círculo Cromatico): 
+        </p>
+
+        <pre class="text-center">
+            0° RED
+            60°  YELLOW
+            120° GREEN
+            180° CYAN
+            240° BLUE
+            300° MAGENTA
+        </pre>
+
+        <img src="../IMG/hsl() _ Codrops.jpeg" alt="Circulo cromatico.png" class="img-cromatic center">
+
+        <p>El segundo valor es Saturation (Saturación)</p>
+
+        <pre class="text-center">
+            0% Escala de grises
+            100% Color puro
+        </pre>
+
+        <p>El tercer valor es Lightness (Luminosidad)</p>
+
+        <pre class="text-center">
+            0% negro
+            100% blanco
+        </pre>
+
+        <p class="color-hsl">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi similique qui, non maxime deleniti mollitia quisquam culpa aut ipsa maiores iste fugit, quidem saepe ratione. Dolorum inventore cupiditate quaerat? In.
+        </p>
+
+    </article>
+    
+    <article id="trans-currColor">
+        <hr>
+        <h2>Valores Transparent y Current Color</h2>
+
+        <p>
+            Valor Transparent: Color transparente es igual a aplicar rgb(0,0,0,0)
+        </p>
+        <p>
+            Valor currentColor: Hereda el valor por defecto o asignado de la propiedad color, del ancestro que tenga
+            definida esta propiedad, busca del ancestro más cercano al más alejado. 
+        </p>
+
+        <div class="color-transparent-current">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, exercitationem consequatur, commodi vitae illum dolore corporis iste placeat excepturi maxime harum odit, perspiciatis ducimus molestiae pariatur natus perferendis itaque suscipit.
+        </div>
+    </article>
+
+   
+
+    <article>
+        <hr>
+        <h2>Propiedad Opacity</h2>
+        <div class="Opacity">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quos natus vel id consequuntur voluptates laborum sit libero hic facilis fuga consectetur, aut inventore veritatis excepturi sed aliquam dicta non.
+        </div>
+
+    </article>
+
+    <a href="index.html">Regresar</a>
+</body>
+</html>
